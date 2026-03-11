@@ -1,0 +1,472 @@
+{
+  "products": [
+    {
+      "id": "prod_001",
+      "name": "オイコス ストロベリー",
+      "name_en": "Oikos Strawberry",
+      "brand": "ダノン",
+      "category": "乳製品",
+      "price": 998,
+      "unit": "110g × 12個",
+      "description": "高たんぱく・脂肪ゼロのギリシャヨーグルト。トレーニング後のプロテイン補給に大人気。",
+      "image_url": "",
+      "in_stock": true,
+      "is_sale": true,
+      "sale_price": 848,
+      "tags": ["ヨーグルト", "プロテイン", "ダイエット", "高たんぱく"]
+    },
+    {
+      "id": "prod_002",
+      "name": "ディナーロール",
+      "name_en": "Dinner Roll",
+      "brand": "カークランド",
+      "category": "ベーカリー",
+      "price": 498,
+      "unit": "36個入り",
+      "description": "コストコの定番人気商品。ふわふわ食感のロールパン。冷凍保存可能。",
+      "image_url": "",
+      "in_stock": true,
+      "is_sale": false,
+      "sale_price": null,
+      "tags": ["パン", "定番", "冷凍保存OK"]
+    },
+    {
+      "id": "prod_003",
+      "name": "プルコギビーフ",
+      "name_en": "Bulgogi Beef",
+      "brand": "カークランド",
+      "category": "デリ・惣菜",
+      "price": 2380,
+      "unit": "約1.5kg",
+      "description": "甘辛い特製タレで味付け済み。焼くだけで本格プルコギが楽しめる。",
+      "image_url": "",
+      "in_stock": true,
+      "is_sale": false,
+      "sale_price": null,
+      "tags": ["肉", "味付け済み", "BBQ", "定番"]
+    },
+    {
+      "id": "prod_004",
+      "name": "ロティサリーチキン",
+      "name_en": "Rotisserie Chicken",
+      "brand": "カークランド",
+      "category": "デリ・惣菜",
+      "price": 799,
+      "unit": "1羽（約1.3kg）",
+      "description": "丸ごとローストチキン。そのまま食べても、ほぐしてサラダやサンドイッチにも。",
+      "image_url": "",
+      "in_stock": true,
+      "is_sale": false,
+      "sale_price": null,
+      "tags": ["チキン", "ロースト", "コスパ最強", "定番"]
+    },
+    {
+      "id": "prod_005",
+      "name": "マスカルポーネロール",
+      "name_en": "Mascarpone Roll",
+      "brand": "カークランド",
+      "category": "ベーカリー",
+      "price": 798,
+      "unit": "18個入り",
+      "description": "イタリア産マスカルポーネチーズ使用の贅沢ロールパン。SNSで大バズり中。",
+      "image_url": "",
+      "in_stock": true,
+      "is_sale": false,
+      "sale_price": null,
+      "tags": ["パン", "チーズ", "SNSで話題"]
+    },
+    {
+      "id": "prod_006",
+      "name": "パンオショコラ",
+      "name_en": "Pain au Chocolat",
+      "brand": "カークランド",
+      "category": "ベーカリー",
+      "price": 899,
+      "unit": "24個入り",
+      "description": "バター香るサクサクのクロワッサン生地にチョコレートバー入り。",
+      "image_url": "",
+      "in_stock": true,
+      "is_sale": true,
+      "sale_price": 699,
+      "tags": ["パン", "チョコ", "セール中"]
+    },
+    {
+      "id": "prod_007",
+      "name": "さくらどり むね肉",
+      "name_en": "Sakuradori Chicken Breast",
+      "brand": "さくらどり",
+      "category": "食品",
+      "price": 2480,
+      "unit": "2.4kg",
+      "description": "国産鶏むね肉の大容量パック。筋トレ民御用達のプロテイン源。",
+      "image_url": "",
+      "in_stock": true,
+      "is_sale": false,
+      "sale_price": null,
+      "tags": ["肉", "鶏肉", "プロテイン", "筋トレ"]
+    },
+    {
+      "id": "prod_008",
+      "name": "オキシクリーン",
+      "name_en": "OxiClean",
+      "brand": "オキシクリーン",
+      "category": "日用品",
+      "price": 2198,
+      "unit": "5.26kg",
+      "description": "万能酸素系漂白剤。洗濯、掃除、オキシ漬けに大活躍。",
+      "image_url": "",
+      "in_stock": true,
+      "is_sale": false,
+      "sale_price": null,
+      "tags": ["掃除", "洗剤", "万能", "定番"]
+    },
+    {
+      "id": "prod_009",
+      "name": "韓国味付けのり",
+      "name_en": "Korean Seasoned Seaweed",
+      "brand": "ビビゴ",
+      "category": "食品",
+      "price": 1298,
+      "unit": "12パック",
+      "description": "パリパリ食感の韓国のり。ごま油の風味が絶品。おやつにもご飯のお供にも。",
+      "image_url": "",
+      "in_stock": true,
+      "is_sale": false,
+      "sale_price": null,
+      "tags": ["のり", "韓国", "おやつ"]
+    },
+    {
+      "id": "prod_010",
+      "name": "ティラミス",
+      "name_en": "Tiramisu",
+      "brand": "カークランド",
+      "category": "デリ・惣菜",
+      "price": 1580,
+      "unit": "約1.5kg",
+      "description": "大容量の本格ティラミス。パーティーや家族の集まりに最適。",
+      "image_url": "",
+      "in_stock": true,
+      "is_sale": true,
+      "sale_price": 1280,
+      "tags": ["スイーツ", "パーティー", "セール中"]
+    },
+    {
+      "id": "prod_011",
+      "name": "伊藤園 お〜いお茶",
+      "name_en": "Oi Ocha Green Tea",
+      "brand": "伊藤園",
+      "category": "飲料",
+      "price": 1998,
+      "unit": "525ml × 24本",
+      "description": "国産茶葉100%使用のペットボトル緑茶。大容量のケース買い。",
+      "image_url": "",
+      "in_stock": true,
+      "is_sale": false,
+      "sale_price": null,
+      "tags": ["お茶", "ペットボトル", "まとめ買い"]
+    },
+    {
+      "id": "prod_012",
+      "name": "バスティッシュ",
+      "name_en": "Bath Tissue",
+      "brand": "カークランド",
+      "category": "日用品",
+      "price": 2498,
+      "unit": "30ロール",
+      "description": "ふわふわ3枚重ねのトイレットペーパー。コスパ最強の大容量パック。",
+      "image_url": "",
+      "in_stock": true,
+      "is_sale": false,
+      "sale_price": null,
+      "tags": ["トイレットペーパー", "日用品", "まとめ買い"]
+    }
+  ],
+  "trends": {
+    "prod_001": {
+      "product_id": "prod_001",
+      "score": 92.5,
+      "trend_label": "🔥 急上昇",
+      "total_mentions_24h": 3420,
+      "total_mentions_7d": 15800,
+      "change_rate_24h": 187.5,
+      "change_rate_7d": 340.2,
+      "history": [
+        {"timestamp": "2026-03-05T00:00:00", "mentions": 450, "sentiment": 0.82},
+        {"timestamp": "2026-03-06T00:00:00", "mentions": 620, "sentiment": 0.79},
+        {"timestamp": "2026-03-07T00:00:00", "mentions": 1100, "sentiment": 0.85},
+        {"timestamp": "2026-03-08T00:00:00", "mentions": 1850, "sentiment": 0.88},
+        {"timestamp": "2026-03-09T00:00:00", "mentions": 2800, "sentiment": 0.91},
+        {"timestamp": "2026-03-10T00:00:00", "mentions": 3200, "sentiment": 0.87},
+        {"timestamp": "2026-03-11T00:00:00", "mentions": 3420, "sentiment": 0.89}
+      ],
+      "top_keywords": ["オイコスセール", "高たんぱく", "ダイエット", "プロテイン", "コストコ神商品"]
+    },
+    "prod_002": {
+      "product_id": "prod_002",
+      "score": 45.0,
+      "trend_label": "➡️ 安定",
+      "total_mentions_24h": 890,
+      "total_mentions_7d": 6200,
+      "change_rate_24h": 5.2,
+      "change_rate_7d": -2.1,
+      "history": [
+        {"timestamp": "2026-03-05T00:00:00", "mentions": 870, "sentiment": 0.75},
+        {"timestamp": "2026-03-06T00:00:00", "mentions": 900, "sentiment": 0.72},
+        {"timestamp": "2026-03-07T00:00:00", "mentions": 880, "sentiment": 0.78},
+        {"timestamp": "2026-03-08T00:00:00", "mentions": 910, "sentiment": 0.76},
+        {"timestamp": "2026-03-09T00:00:00", "mentions": 860, "sentiment": 0.74},
+        {"timestamp": "2026-03-10T00:00:00", "mentions": 890, "sentiment": 0.77},
+        {"timestamp": "2026-03-11T00:00:00", "mentions": 890, "sentiment": 0.75}
+      ],
+      "top_keywords": ["ディナーロール", "冷凍保存", "コストコ定番"]
+    },
+    "prod_003": {
+      "product_id": "prod_003",
+      "score": 68.3,
+      "trend_label": "📈 上昇中",
+      "total_mentions_24h": 1520,
+      "total_mentions_7d": 8900,
+      "change_rate_24h": 42.0,
+      "change_rate_7d": 78.5,
+      "history": [
+        {"timestamp": "2026-03-05T00:00:00", "mentions": 700, "sentiment": 0.81},
+        {"timestamp": "2026-03-06T00:00:00", "mentions": 850, "sentiment": 0.79},
+        {"timestamp": "2026-03-07T00:00:00", "mentions": 1050, "sentiment": 0.83},
+        {"timestamp": "2026-03-08T00:00:00", "mentions": 1200, "sentiment": 0.84},
+        {"timestamp": "2026-03-09T00:00:00", "mentions": 1350, "sentiment": 0.82},
+        {"timestamp": "2026-03-10T00:00:00", "mentions": 1430, "sentiment": 0.86},
+        {"timestamp": "2026-03-11T00:00:00", "mentions": 1520, "sentiment": 0.85}
+      ],
+      "top_keywords": ["プルコギ", "BBQ", "花見", "春のBBQ"]
+    },
+    "prod_004": {
+      "product_id": "prod_004",
+      "score": 55.0,
+      "trend_label": "➡️ 安定",
+      "total_mentions_24h": 1100,
+      "total_mentions_7d": 7500,
+      "change_rate_24h": 8.0,
+      "change_rate_7d": 3.5,
+      "history": [
+        {"timestamp": "2026-03-05T00:00:00", "mentions": 1020, "sentiment": 0.88},
+        {"timestamp": "2026-03-06T00:00:00", "mentions": 1050, "sentiment": 0.86},
+        {"timestamp": "2026-03-07T00:00:00", "mentions": 1080, "sentiment": 0.89},
+        {"timestamp": "2026-03-08T00:00:00", "mentions": 1100, "sentiment": 0.87},
+        {"timestamp": "2026-03-09T00:00:00", "mentions": 1070, "sentiment": 0.90},
+        {"timestamp": "2026-03-10T00:00:00", "mentions": 1100, "sentiment": 0.88},
+        {"timestamp": "2026-03-11T00:00:00", "mentions": 1100, "sentiment": 0.89}
+      ],
+      "top_keywords": ["ロティサリーチキン", "コスパ最強", "799円"]
+    },
+    "prod_005": {
+      "product_id": "prod_005",
+      "score": 88.7,
+      "trend_label": "🔥 急上昇",
+      "total_mentions_24h": 4100,
+      "total_mentions_7d": 18500,
+      "change_rate_24h": 215.0,
+      "change_rate_7d": 520.3,
+      "history": [
+        {"timestamp": "2026-03-05T00:00:00", "mentions": 300, "sentiment": 0.92},
+        {"timestamp": "2026-03-06T00:00:00", "mentions": 780, "sentiment": 0.94},
+        {"timestamp": "2026-03-07T00:00:00", "mentions": 1800, "sentiment": 0.93},
+        {"timestamp": "2026-03-08T00:00:00", "mentions": 2600, "sentiment": 0.95},
+        {"timestamp": "2026-03-09T00:00:00", "mentions": 3400, "sentiment": 0.91},
+        {"timestamp": "2026-03-10T00:00:00", "mentions": 3900, "sentiment": 0.93},
+        {"timestamp": "2026-03-11T00:00:00", "mentions": 4100, "sentiment": 0.94}
+      ],
+      "top_keywords": ["マスカルポーネロール", "コストコ新商品", "チーズパン", "バズりパン", "インスタ映え"]
+    },
+    "prod_006": {
+      "product_id": "prod_006",
+      "score": 71.2,
+      "trend_label": "📈 上昇中",
+      "total_mentions_24h": 1800,
+      "total_mentions_7d": 9200,
+      "change_rate_24h": 55.0,
+      "change_rate_7d": 95.0,
+      "history": [
+        {"timestamp": "2026-03-05T00:00:00", "mentions": 600, "sentiment": 0.80},
+        {"timestamp": "2026-03-06T00:00:00", "mentions": 800, "sentiment": 0.82},
+        {"timestamp": "2026-03-07T00:00:00", "mentions": 1000, "sentiment": 0.85},
+        {"timestamp": "2026-03-08T00:00:00", "mentions": 1200, "sentiment": 0.83},
+        {"timestamp": "2026-03-09T00:00:00", "mentions": 1500, "sentiment": 0.86},
+        {"timestamp": "2026-03-10T00:00:00", "mentions": 1700, "sentiment": 0.84},
+        {"timestamp": "2026-03-11T00:00:00", "mentions": 1800, "sentiment": 0.85}
+      ],
+      "top_keywords": ["パンオショコラ", "セール", "200円引き", "チョコクロワッサン"]
+    },
+    "prod_007": {
+      "product_id": "prod_007",
+      "score": 62.0,
+      "trend_label": "📈 上昇中",
+      "total_mentions_24h": 1300,
+      "total_mentions_7d": 7800,
+      "change_rate_24h": 30.0,
+      "change_rate_7d": 52.0,
+      "history": [
+        {"timestamp": "2026-03-05T00:00:00", "mentions": 800, "sentiment": 0.76},
+        {"timestamp": "2026-03-06T00:00:00", "mentions": 900, "sentiment": 0.78},
+        {"timestamp": "2026-03-07T00:00:00", "mentions": 1000, "sentiment": 0.80},
+        {"timestamp": "2026-03-08T00:00:00", "mentions": 1100, "sentiment": 0.79},
+        {"timestamp": "2026-03-09T00:00:00", "mentions": 1200, "sentiment": 0.82},
+        {"timestamp": "2026-03-10T00:00:00", "mentions": 1250, "sentiment": 0.81},
+        {"timestamp": "2026-03-11T00:00:00", "mentions": 1300, "sentiment": 0.80}
+      ],
+      "top_keywords": ["さくらどり", "むね肉", "筋トレ", "プロテイン", "鶏肉レシピ"]
+    },
+    "prod_008": {
+      "product_id": "prod_008",
+      "score": 35.0,
+      "trend_label": "➡️ 安定",
+      "total_mentions_24h": 650,
+      "total_mentions_7d": 4500,
+      "change_rate_24h": 2.0,
+      "change_rate_7d": -5.0,
+      "history": [
+        {"timestamp": "2026-03-05T00:00:00", "mentions": 650, "sentiment": 0.70},
+        {"timestamp": "2026-03-06T00:00:00", "mentions": 660, "sentiment": 0.72},
+        {"timestamp": "2026-03-07T00:00:00", "mentions": 640, "sentiment": 0.71},
+        {"timestamp": "2026-03-08T00:00:00", "mentions": 630, "sentiment": 0.73},
+        {"timestamp": "2026-03-09T00:00:00", "mentions": 650, "sentiment": 0.70},
+        {"timestamp": "2026-03-10T00:00:00", "mentions": 640, "sentiment": 0.72},
+        {"timestamp": "2026-03-11T00:00:00", "mentions": 650, "sentiment": 0.71}
+      ],
+      "top_keywords": ["オキシクリーン", "オキシ漬け", "掃除"]
+    },
+    "prod_009": {
+      "product_id": "prod_009",
+      "score": 40.0,
+      "trend_label": "➡️ 安定",
+      "total_mentions_24h": 720,
+      "total_mentions_7d": 4900,
+      "change_rate_24h": 3.5,
+      "change_rate_7d": 1.0,
+      "history": [
+        {"timestamp": "2026-03-05T00:00:00", "mentions": 700, "sentiment": 0.82},
+        {"timestamp": "2026-03-06T00:00:00", "mentions": 710, "sentiment": 0.80},
+        {"timestamp": "2026-03-07T00:00:00", "mentions": 690, "sentiment": 0.83},
+        {"timestamp": "2026-03-08T00:00:00", "mentions": 720, "sentiment": 0.81},
+        {"timestamp": "2026-03-09T00:00:00", "mentions": 700, "sentiment": 0.82},
+        {"timestamp": "2026-03-10T00:00:00", "mentions": 710, "sentiment": 0.80},
+        {"timestamp": "2026-03-11T00:00:00", "mentions": 720, "sentiment": 0.82}
+      ],
+      "top_keywords": ["韓国のり", "おつまみ", "ビビゴ"]
+    },
+    "prod_010": {
+      "product_id": "prod_010",
+      "score": 78.5,
+      "trend_label": "📈 上昇中",
+      "total_mentions_24h": 2100,
+      "total_mentions_7d": 11000,
+      "change_rate_24h": 68.0,
+      "change_rate_7d": 120.0,
+      "history": [
+        {"timestamp": "2026-03-05T00:00:00", "mentions": 500, "sentiment": 0.90},
+        {"timestamp": "2026-03-06T00:00:00", "mentions": 800, "sentiment": 0.88},
+        {"timestamp": "2026-03-07T00:00:00", "mentions": 1200, "sentiment": 0.91},
+        {"timestamp": "2026-03-08T00:00:00", "mentions": 1500, "sentiment": 0.89},
+        {"timestamp": "2026-03-09T00:00:00", "mentions": 1800, "sentiment": 0.92},
+        {"timestamp": "2026-03-10T00:00:00", "mentions": 2000, "sentiment": 0.90},
+        {"timestamp": "2026-03-11T00:00:00", "mentions": 2100, "sentiment": 0.91}
+      ],
+      "top_keywords": ["ティラミス", "コストコスイーツ", "セール", "300円引き", "パーティー"]
+    },
+    "prod_011": {
+      "product_id": "prod_011",
+      "score": 25.0,
+      "trend_label": "📉 下降中",
+      "total_mentions_24h": 320,
+      "total_mentions_7d": 2800,
+      "change_rate_24h": -15.0,
+      "change_rate_7d": -25.0,
+      "history": [
+        {"timestamp": "2026-03-05T00:00:00", "mentions": 500, "sentiment": 0.60},
+        {"timestamp": "2026-03-06T00:00:00", "mentions": 450, "sentiment": 0.62},
+        {"timestamp": "2026-03-07T00:00:00", "mentions": 420, "sentiment": 0.58},
+        {"timestamp": "2026-03-08T00:00:00", "mentions": 400, "sentiment": 0.61},
+        {"timestamp": "2026-03-09T00:00:00", "mentions": 380, "sentiment": 0.59},
+        {"timestamp": "2026-03-10T00:00:00", "mentions": 340, "sentiment": 0.57},
+        {"timestamp": "2026-03-11T00:00:00", "mentions": 320, "sentiment": 0.60}
+      ],
+      "top_keywords": ["おーいお茶", "まとめ買い"]
+    },
+    "prod_012": {
+      "product_id": "prod_012",
+      "score": 30.0,
+      "trend_label": "➡️ 安定",
+      "total_mentions_24h": 500,
+      "total_mentions_7d": 3500,
+      "change_rate_24h": 0.0,
+      "change_rate_7d": -3.0,
+      "history": [
+        {"timestamp": "2026-03-05T00:00:00", "mentions": 500, "sentiment": 0.65},
+        {"timestamp": "2026-03-06T00:00:00", "mentions": 510, "sentiment": 0.67},
+        {"timestamp": "2026-03-07T00:00:00", "mentions": 490, "sentiment": 0.66},
+        {"timestamp": "2026-03-08T00:00:00", "mentions": 505, "sentiment": 0.64},
+        {"timestamp": "2026-03-09T00:00:00", "mentions": 500, "sentiment": 0.68},
+        {"timestamp": "2026-03-10T00:00:00", "mentions": 495, "sentiment": 0.65},
+        {"timestamp": "2026-03-11T00:00:00", "mentions": 500, "sentiment": 0.66}
+      ],
+      "top_keywords": ["トイレットペーパー", "まとめ買い"]
+    }
+  },
+  "favorites": [
+    {
+      "id": "fav_001",
+      "user_id": "default_user",
+      "product_id": "prod_001",
+      "keywords": ["オイコス", "セール"],
+      "notify_on_sale": true,
+      "notify_on_trend": true,
+      "created_at": "2026-03-01T10:00:00"
+    },
+    {
+      "id": "fav_002",
+      "user_id": "default_user",
+      "product_id": "prod_005",
+      "keywords": ["マスカルポーネロール"],
+      "notify_on_sale": true,
+      "notify_on_trend": true,
+      "created_at": "2026-03-08T14:30:00"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif_001",
+      "product_id": "prod_001",
+      "type": "セール",
+      "title": "🎉 オイコスがセール中！",
+      "message": "お気に入りの「オイコス ストロベリー」が ¥998 → ¥848 に値下げされました！150円お得です。",
+      "is_read": false,
+      "created_at": "2026-03-11T09:00:00"
+    },
+    {
+      "id": "notif_002",
+      "product_id": "prod_005",
+      "type": "トレンド急上昇",
+      "title": "🔥 マスカルポーネロールがバズってます！",
+      "message": "「マスカルポーネロール」のSNS言及数が24時間で215%増加。トレンドスコア88.7で急上昇中です。",
+      "is_read": false,
+      "created_at": "2026-03-11T10:30:00"
+    },
+    {
+      "id": "notif_003",
+      "product_id": "prod_006",
+      "type": "セール",
+      "title": "💰 パンオショコラが200円OFF！",
+      "message": "「パンオショコラ」が ¥899 → ¥699 にセール中。期間限定のお買い得品です。",
+      "is_read": true,
+      "created_at": "2026-03-10T15:00:00"
+    },
+    {
+      "id": "notif_004",
+      "product_id": "prod_010",
+      "type": "キーワードマッチ",
+      "title": "📢 ティラミスにキーワード一致",
+      "message": "「ティラミス」がセール中（¥1,580 → ¥1,280）で、トレンドも上昇中（スコア78.5）。チェックしてみてください！",
+      "is_read": true,
+      "created_at": "2026-03-09T12:00:00"
+    }
+  ]
+}
