@@ -3,33 +3,54 @@
 /* ─── Google Fonts ─────────────────────────────────────── */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;600;700;800;900&display=swap');
 
-/* ─── Tailwind v4 Theme ───────────────────────────────── */
+/* ─── Tailwind v4 Theme — Costco Sniper ──────────────── */
 @theme {
-  --color-costco-red: #E31837;
-  --color-costco-red-dark: #B8132D;
-  --color-costco-blue: #005DAA;
-  --color-costco-blue-dark: #004A88;
+  /* ブランドカラー */
+  --color-sniper-red: #FF1744;
+  --color-sniper-red-glow: rgba(255, 23, 68, 0.4);
+  --color-sniper-blue: #00B0FF;
+  --color-sniper-blue-glow: rgba(0, 176, 255, 0.3);
+  --color-sniper-gold: #FFD600;
+  --color-sniper-green: #00E676;
+  --color-sniper-purple: #D500F9;
 
-  --color-bg-primary: #0f0f17;
-  --color-bg-secondary: #181825;
-  --color-bg-card: #1e1e2e;
-  --color-bg-card-hover: #262638;
-  --color-bg-glass: rgba(30, 30, 46, 0.6);
+  /* 旧名との互換 */
+  --color-costco-red: #FF1744;
+  --color-costco-red-dark: #D50000;
+  --color-costco-blue: #00B0FF;
+  --color-costco-blue-dark: #0091EA;
 
-  --color-text-primary: #e4e4f0;
-  --color-text-secondary: #a0a0b8;
-  --color-text-muted: #6c6c88;
+  /* 背景 — ディープネイビー系 */
+  --color-bg-primary: #080c14;
+  --color-bg-secondary: #0e1420;
+  --color-bg-card: #141c2b;
+  --color-bg-card-hover: #1a2538;
+  --color-bg-glass: rgba(20, 28, 43, 0.65);
+  --color-bg-glass-strong: rgba(20, 28, 43, 0.85);
 
-  --color-accent-hot: #ff4757;
-  --color-accent-rising: #ffa502;
-  --color-accent-stable: #2ed573;
-  --color-accent-declining: #747d8c;
+  /* テキスト */
+  --color-text-primary: #eaf0f8;
+  --color-text-secondary: #8b99b0;
+  --color-text-muted: #506080;
 
+  /* アクセント — ステータス */
+  --color-accent-hot: #FF1744;
+  --color-accent-rising: #FF9100;
+  --color-accent-stable: #00E676;
+  --color-accent-declining: #607D8B;
+  --color-accent-sale: #00E676;
+  --color-accent-buzz: #FF1744;
+  --color-accent-sale-buzz: #D500F9;
+
+  /* ボーダー */
   --color-border-default: rgba(255, 255, 255, 0.06);
-  --color-border-hover: rgba(255, 255, 255, 0.12);
+  --color-border-hover: rgba(255, 255, 255, 0.14);
+  --color-border-sniper: rgba(255, 23, 68, 0.2);
 
+  /* フォント */
   --font-sans: 'Inter', 'Noto Sans JP', system-ui, sans-serif;
 
+  /* 半径 */
   --radius-card: 1rem;
   --radius-badge: 0.5rem;
   --radius-full: 9999px;
@@ -57,38 +78,38 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ─── Scrollbar Custom ───────────────────────────────── */
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-::-webkit-scrollbar-track {
-  background: var(--color-bg-secondary);
-}
+/* ─── Scrollbar ──────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb {
   background: var(--color-text-muted);
   border-radius: var(--radius-full);
 }
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-text-secondary);
-}
+::-webkit-scrollbar-thumb:hover { background: var(--color-text-secondary); }
 
 /* ─── Glass Morphism ─────────────────────────────────── */
 .glass {
   background: var(--color-bg-glass);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(20px) saturate(1.3);
+  -webkit-backdrop-filter: blur(20px) saturate(1.3);
+  border: 1px solid var(--color-border-default);
+}
+
+.glass-strong {
+  background: var(--color-bg-glass-strong);
+  backdrop-filter: blur(24px) saturate(1.4);
+  -webkit-backdrop-filter: blur(24px) saturate(1.4);
   border: 1px solid var(--color-border-default);
 }
 
 /* ─── Animations ─────────────────────────────────────── */
 @keyframes pulse-hot {
   0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.8; transform: scale(1.05); }
+  50% { opacity: 0.85; transform: scale(1.03); }
 }
 
 @keyframes slide-up {
-  from { opacity: 0; transform: translateY(20px); }
+  from { opacity: 0; transform: translateY(24px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
@@ -97,45 +118,109 @@ body {
   to { opacity: 1; }
 }
 
-@keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+@keyframes snipe-in {
+  0% { opacity: 0; transform: scale(0.92) translateY(12px); filter: blur(4px); }
+  60% { opacity: 1; transform: scale(1.02) translateY(-2px); filter: blur(0); }
+  100% { opacity: 1; transform: scale(1) translateY(0); filter: blur(0); }
 }
 
-.animate-pulse-hot {
-  animation: pulse-hot 2s ease-in-out infinite;
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 8px var(--color-sniper-red-glow), inset 0 0 8px rgba(255, 23, 68, 0.05); }
+  50% { box-shadow: 0 0 20px var(--color-sniper-red-glow), inset 0 0 12px rgba(255, 23, 68, 0.08); }
 }
 
-.animate-slide-up {
-  animation: slide-up 0.5s ease-out forwards;
+@keyframes countdown-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
 }
 
-.animate-fade-in {
-  animation: fade-in 0.3s ease-out forwards;
+@keyframes scan-line {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
 }
+
+@keyframes status-dot {
+  0%, 100% { box-shadow: 0 0 0 0 currentColor; }
+  50% { box-shadow: 0 0 0 6px transparent; }
+}
+
+.animate-pulse-hot { animation: pulse-hot 2s ease-in-out infinite; }
+.animate-slide-up { animation: slide-up 0.5s ease-out forwards; }
+.animate-fade-in { animation: fade-in 0.3s ease-out forwards; }
+.animate-snipe-in { animation: snipe-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+.animate-glow-pulse { animation: glow-pulse 3s ease-in-out infinite; }
+.animate-countdown { animation: countdown-pulse 1.5s ease-in-out infinite; }
+.animate-status-dot { animation: status-dot 2s ease-in-out infinite; }
 
 /* ─── Card Hover ─────────────────────────────────────── */
 .card-hover {
-  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-              box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-              border-color 0.3s ease;
+  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              box-shadow 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              border-color 0.35s ease;
 }
 .card-hover:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5), 0 0 24px rgba(255, 23, 68, 0.06);
   border-color: var(--color-border-hover);
+}
+
+/* ─── Sniper Card ────────────────────────────────────── */
+.sniper-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.sniper-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-sniper-red), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.sniper-card:hover::before {
+  opacity: 1;
+}
+.sniper-card.on-sale::before {
+  background: linear-gradient(90deg, transparent, var(--color-accent-sale), transparent);
+  opacity: 1;
+}
+.sniper-card.buzzing::before {
+  background: linear-gradient(90deg, transparent, var(--color-accent-buzz), transparent);
+  opacity: 1;
+}
+.sniper-card.sale-buzz::before {
+  background: linear-gradient(90deg, var(--color-accent-sale), var(--color-accent-sale-buzz), var(--color-accent-buzz));
+  opacity: 1;
 }
 
 /* ─── Gradient Texts ─────────────────────────────────── */
 .gradient-text-hot {
-  background: linear-gradient(135deg, #ff4757, #ff6b81);
+  background: linear-gradient(135deg, #FF1744, #FF6D00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-text-brand {
-  background: linear-gradient(135deg, var(--color-costco-red), var(--color-costco-blue));
+  background: linear-gradient(135deg, var(--color-sniper-red), #FF6D00, var(--color-sniper-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-sniper {
+  background: linear-gradient(135deg, #FF1744, #FF6D00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-sale {
+  background: linear-gradient(135deg, #00E676, #00C853);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -154,6 +239,34 @@ body {
   flex-shrink: 0;
 }
 
+/* ─── Status Indicators ─────────────────────────────── */
+.status-on-sale {
+  color: var(--color-accent-sale);
+}
+.status-buzzing {
+  color: var(--color-accent-buzz);
+}
+.status-sale-buzz {
+  color: var(--color-accent-sale-buzz);
+}
+
+/* ─── Scan line overlay ─────────────────────────────── */
+.scan-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.scan-overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 23, 68, 0.03), transparent);
+  animation: scan-line 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
 /* ─── Notification Dot ───────────────────────────────── */
 .notification-dot {
   position: relative;
@@ -165,7 +278,39 @@ body {
   right: -2px;
   width: 10px;
   height: 10px;
-  background: var(--color-costco-red);
+  background: var(--color-sniper-red);
   border-radius: 50%;
   border: 2px solid var(--color-bg-primary);
+}
+
+/* ─── Bottom Badge (sale countdown) ──────────────────── */
+.countdown-badge {
+  position: relative;
+}
+.countdown-badge::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, var(--color-sniper-red), var(--color-sniper-gold));
+  z-index: -1;
+  opacity: 0.6;
+  filter: blur(4px);
+}
+
+/* ─── Section Divider ────────────────────────────────── */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-border-default) 20%, var(--color-border-default) 80%, transparent);
+}
+
+/* ─── Recharts overrides ─────────────────────────────── */
+.recharts-cartesian-axis-tick-value {
+  fill: var(--color-text-muted) !important;
+  font-size: 11px !important;
+}
+.recharts-default-tooltip {
+  background: var(--color-bg-card) !important;
+  border: 1px solid var(--color-border-default) !important;
+  border-radius: 12px !important;
 }
